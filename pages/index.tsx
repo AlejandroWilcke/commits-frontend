@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import CommitList from '@/components/CommitList.component'
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
         <h1 className="p-4 text-3xl text-white text-center font-bold font-roboto underline tracking-wider underline-offset-8">
           Github Commits List
         </h1>
+        <div className='grid grid-cols-12 mx-auto px-12 lg:px-16 xl:px-40'>
+          <CommitList classes='col-span-12 lg:col-span-6'/>
+          <CommitList classes='col-span-12 lg:col-span-6'/>
+        </div>
       </main>
     </>
   )
